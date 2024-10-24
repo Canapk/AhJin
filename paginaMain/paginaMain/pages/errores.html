@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title> Sabath Kindom</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="../css/style/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../css/img/B.jpeg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                     Sabath Kindom
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./inicio.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./carpetas.html">Carpetas compartidas red</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./errores.html">Errores y soluciones</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+ 
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="fs-1 text-center">Errores</p>
+                    <ul class="list-group" data-aos="fade-right">
+                        <li class="list-group-item active error-header" aria-current="true" onclick="toggleSolutions()">
+                            Errores comunes
+                            <span class="toggle-icon">▼</span>
+                        </li>
+                        <li class="list-group-item list-group-item-info solutions" id="solutions">
+                            <ul class="error-list">
+                                <li>1. Error de permisos: No se puede acceder a la carpeta compartida. <br><strong>Solución:</strong> Verificar que los usuarios tengan permisos de lectura y escritura.</li>
+                                <li>2. Error de conexión de red: No se puede conectar a la carpeta compartida. <br><strong>Solución:</strong> Verificar que la conexión de red esté estable.</li>
+                                <li>3. Error de ruta de acceso: No se puede encontrar la carpeta compartida. <br><strong>Solución:</strong> Verificar que la ruta de acceso esté correcta.</li>
+                                <li>4. Error de nombre de carpeta: El nombre de la carpeta no es válido. <br><strong>Solución:</strong> Verificar que el nombre de la carpeta sea válido.</li>
+                                <li>5. Error de formato de archivo: El formato de archivo no es compatible. <br><strong>Solución:</strong> Verificar que el formato de archivo sea compatible.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+
+                    <ul class="list-group" data-aos="fade-right">
+                        <li class="list-group-item active error-header" aria-current="true" onclick="toggleSolutions()">Errores de configuración <span class="toggle-icon">▼</span></li>
+
+                        <li class="list-group-item list-group-item-info solutions" id="solutions">1. Error de configuración de compartición: La carpeta no está compartida correctamente.
+                            Solución: Verificar que la carpeta esté compartida en la red.</li>
+                        <li class="list-group-item list-group-item-info">2. Error de configuración de seguridad: La carpeta no está segura.
+                            Solución: Verificar que los permisos de seguridad estén configurados correctamente.</li>
+                        <li class="list-group-item list-group-item-info">3. Error de ruta de acceso: No se puede encontrar la carpeta compartida.
+                            Solución: Verificar que la ruta de acceso esté correcta.</li>
+                        <li class="list-group-item list-group-item-info">4. Error de configuración de DNS: La configuración de DNS no es correcta. <br>
+                            Solución: Verificar que la configuración de DNS sea correcta.</li>
+                        <li class="list-group-item list-group-item-info">5. Error de configuración de firewall: El firewall bloquea el acceso.<br>
+                            Solución: Verificar que el firewall esté configurado correctamente.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                    <ul class="list-group" data-aos="fade-right">
+                        <li class="list-group-item active" aria-current="true">Errores de compatibilidad</li>
+                        <li class="list-group-item list-group-item-info">1. Error de compatibilidad de sistemas operativos: La carpeta no es compatible con el sistema operativo.
+                            Solución: Verificar que la carpeta esté compartida en un formato compatible.</li>
+                        <li class="list-group-item list-group-item-info">2. Error de versión de protocolo: La versión del protocolo no es compatible.
+                            Solución: Verificar que la versión del protocolo sea compatible.</li>
+                        <li class="list-group-item list-group-item-info">3. Error de software de red: El software de red no funciona correctamente.
+                            Solución: Verificar que el software de red esté actualizado.</li>
+                        <li class="list-group-item list-group-item-info">4. Error de configuración de DNS: La configuración de DNS no es correcta.
+                            Solución: Verificar que la configuración de DNS sea correcta.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                    <ul class="list-group" data-aos="fade-right">
+                        <li class="list-group-item active" aria-current="true">Errores de rendimiento</li>
+                        <li class="list-group-item list-group-item-info">1. Error de rendimiento de red: La carpeta se carga lentamente.
+                            Solución: Verificar que la conexión de red esté estable.</li>
+                        <li class="list-group-item list-group-item-info">1. Error de rendimiento de red: La carpeta se carga lentamente.
+                            Solución: Verificar que la conexión de red esté estable.</li>
+                        <li class="list-group-item list-group-item-info">3. Error de velocidad de transferencia: La velocidad de transferencia es lenta.
+                            Solución: Verificar que la velocidad de transferencia sea adecuada.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                    <ul class="list-group" data-aos="fade-right">
+                        <li class="list-group-item active" aria-current="true">Errores de autenticación</li>
+                        <li class="list-group-item list-group-item-info">1. Error de autenticación: No se puede acceder a la carpeta compartida.
+                            Solución: Verificar que las credenciales de acceso estén correctas.</li>
+                        <li class="list-group-item list-group-item-info">2. Error de contraseña: La contraseña es incorrecta.
+                            Solución: Verificar que la contraseña sea correcta.</li>
+                        <li class="list-group-item list-group-item-info">3. Error de usuario: El usuario no está autorizado. 
+                            Solución: Verificar que el usuario esté autorizado.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                    <ul class="list-group" data-aos="fade-right">
+                        <li class="list-group-item active" aria-current="true">Errores de red</li>
+                        <li class="list-group-item list-group-item-info">1. Error de dirección IP: La dirección IP es incorrecta.
+                            Solución: Verificar que la dirección IP sea correcta.</li>
+                        <li class="list-group-item list-group-item-info">2. Error de máscara de subred: La máscara de subred es incorrecta.<br>
+                            Solución: Verificar que la máscara de subred sea correcta.</li>
+                        <li class="list-group-item list-group-item-info">3. Error de puerta de enlace: La puerta de enlace es incorrecta. <br>
+                            Solución: Verificar que la puerta de enlace sea correcta.</li>
+                        <li class="list-group-item list-group-item-info">4. Error de servidor DNS: El servidor DNS no responde.
+                            Solución: Verificar que el servidor DNS esté funcionando correctamente.</li>
+                        <li class="list-group-item list-group-item-info">5. Error de servidor DHCP: El servidor DHCP no responde.
+                            Solución: Verificar que el servidor DHCP esté funcionando correctamente. </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                    <ul class="list-group" data-aos="fade-right">
+                        <li class="list-group-item active" aria-current="true">Errores de software</li>
+                        <li class="list-group-item list-group-item-info">1. Error de software de red: El software de red no funciona correctamente. 
+                            Solución: Verificar que el software de red esté actualizado./li>
+                        <li class="list-group-item list-group-item-info">2. Error de actualización de sistema: El sistema operativo no está actualizado. 
+                            Solución: Verificar que el sistema operativo esté actualizado.</li>
+                        <li class="list-group-item list-group-item-info">3. Error de configuración de sistema: La configuración del sistema no es correcta. 
+                            Solución: Verificar que la configuración del sistema sea correct.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="conatiner mt-4">
+            <p class="fs-1 mt-4 text-center">UNIREM</p>
+            <div class="row">
+              <p class="fs-3 mt-4 text-center">Alumnos</p>
+              <div class="col mt-4 ms-5">
+                <div class="card" style="width: 200px;">
+                  <img src="../css/img/B.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Mrio salvador aribay diaz</p>
+                    <p class="card-text">N.Control:223302336</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mt-4 ms-5 ">
+                <div class="card" style="width: 200px;">
+                  <img src="../css/img/B.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Erwin dayan velaszquez arollo</p>
+                    <p class="card-text">N.Control:223302338</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mt-4 ms-5">
+                <div class="card" style="width: 200px;">
+                  <img src="../css/img/B.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">kendra Nicole lopez gonzalez</p>
+                    <p class="card-text">N.Control:223302340</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p class="fs-1 mt-4 text-center">Examen</p>
+                <p class="fw-bold">redes</p>
+                <p class="fw-bold">Grupo: CS0701V</p>
+              </div>
+              <div class="col">
+                <p class="fs-1 mt-4 text-center">Síguenos</p>
+              </div>
+            </div>
+          </div>
+            
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            function toggleSolutions() {
+                var solutions = document.getElementById("solutions");
+                var icon = document.querySelector(".toggle-icon");
+                solutions.classList.toggle("show");
+                icon.style.transform = solutions.classList.contains("show") ? "rotate(180deg)" : "rotate(0deg)";
+            }
+        </script>
+        
+        <script>
+          AOS.init();
+        </script>
+    </body>
+</html>
